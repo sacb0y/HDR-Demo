@@ -1,0 +1,33 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="GlobalButtons" src="project://database/Assets/_Project/UI/GlobalButtons.uxml?fileID=9197481963319205126&amp;guid=afd5d21a5d627ab4088425c1c15c9544&amp;type=3#GlobalButtons"/>
+    <ui:Template name="TestTabContent" src="project://database/Assets/_Project/UI/UITK%20Templates/TestTabContent.uxml?fileID=9197481963319205126&amp;guid=e418ed3189df78046a96eae6d5a95a8d&amp;type=3#TestTabContent"/>
+    <Style src="project://database/Assets/_Project/UI/UITK%20Templates/VerticalTab.uss?fileID=7433441132597879392&amp;guid=8ed81a29cfec17c408a60cfc5c6019e6&amp;type=3#VerticalTab"/>
+    <Style src="project://database/Assets/_Project/UI/HDRInfo.uss?fileID=7433441132597879392&amp;guid=1a2c9e9f5d5b3c54c974520215399248&amp;type=3#HDRInfo"/>
+    <ui:VisualElement style="margin-right: 68px;">
+        <ui:TabView view-data-key="TabbedMenu" reorderable="true" name="VerticalTabView" class="VerticalTabView unity-tab-view__content-viewport description" style="margin-right: 0;">
+            <ui:Tab label="What is HDR?" name="WhatIsHDR">
+                <ui:VisualElement name="TestTabContent">
+                    <ui:VisualElement name="TestTabContent" style="flex-grow: 1; height: auto; justify-content: flex-start; align-content: auto;">
+                        <ui:ScrollView name="TabScrollView" style="width: 100%; height: auto;">
+                            <ui:Label text="&lt;size= 48&gt;Color + Luminance!&lt;/size&gt;&#10;Or at least thats how I like to think of it. HDR is color plus the brightness that color needs to be. &#10;&#10;This is also a good way to think of how displays work. An SDR display simply see color (0-255 values, or 0-1 for linear colors with fractions for inbetweens) and then displays those colors as bright as it can. &#10;&#10;While an HDR display has both the hue and the luminence of that hue. It can not only display red, but also show how bright that red should be. Neon is often the most striking in HDR.&#10;&#10;&lt;size= 48&gt;The difference between White and Light!&lt;/size&gt;&#10;Another way to think of HDR, see HDR has this concept called &quot;Paper White&quot; if you&apos;ve ever played an HDR game you may have seen this option. The idea is the value of &quot;Paper White&quot; is the value of a well exposed well lit piece of paper. Often this value is around 200nits. But HDR displays go much brighter, 600, 1000, 1500 nits and greater! &#10;&#10;That &quot;Paper White&quot; becomes the difference between a &quot;flash light pointing at the screen&quot; and a &quot;white table in day light&quot; on the screen. This is something challening for SDR. Cause in SDR white is white. Anything else is just gray. So there&apos;s nothing to distinguish these two entirely different objects. If the two things are shown at the same time some degree of color may distinguish the two, but it&apos;s nowhere near as dramatic an HDR display could show. &#10;&#10;&lt;size= 48&gt;And thats not all!&lt;/size&gt;&#10;This is just a base line introduction, in the future I will update this to be a full walkthrough on the basics of HDR, why it&apos;s IMO the most important display tech since HD, and how to determine good HDR and bad HDR. Because HDR is slowly becoming mainstream, and due to the nature of HDR there&apos;s many layers to how content can be viewed. &#10;&#10;There&apos;s the display, content, and in some cases the hardware it&apos;s played on. If one of these three, but mostly the first two have a problem the experience can be severely mitigated. &#10;&#10;As such I want to inform people on why one display looks better than another, why one game may look better than another game. And also how game developers can make sure their content is compelling and why there&apos;s a growing demand for HDR support in games. And why things like auto HDR while useful in some cases, is not a replacement for proper HDR support. &#10;&#10;Please keep an eye out for updates. " name="Description" class="description" style="white-space: normal;"/>
+                        </ui:ScrollView>
+                        <ui:Button text="Button" name="StartButton" style="font-size: 85px; color: rgb(255, 255, 255); margin-top: 15px; display: none;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Tab>
+            <ui:Tab label="Types of HDR" name="TypesOfHDR">
+                <ui:Instance template="TestTabContent">
+                    <AttributeOverrides element-name="Description" text="Understand how HDR content varies, and why certain kinds are much better than others and why."/>
+                    <AttributeOverrides element-name="StartButton" text="Show Demo" binding-path="Demo/HDRTypesDemo"/>
+                </ui:Instance>
+            </ui:Tab>
+            <ui:Tab label="HDR Gallery" name="HDRGallery">
+                <ui:Instance template="TestTabContent">
+                    <AttributeOverrides element-name="Description" text="A gallery of images from HDR games ranging from ideal to solid."/>
+                    <AttributeOverrides element-name="StartButton" text="Open Gallery" binding-path="Demo/HDRGalleryDemo"/>
+                </ui:Instance>
+            </ui:Tab>
+        </ui:TabView>
+    </ui:VisualElement>
+    <ui:Instance template="GlobalButtons" style="position: absolute; top: 0; right: 0;"/>
+</ui:UXML>

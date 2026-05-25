@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="VerticalTabViewTemplate" src="project://database/Assets/_Project/UI/UITK%20Templates/VerticalTabViewTemplate.uxml?fileID=9197481963319205126&amp;guid=de6b53104e00d1b4e84ae03c9170fdb4&amp;type=3#VerticalTabViewTemplate"/>
+    <Style src="project://database/Assets/_Project/UI/UITK%20Templates/VerticalTab.uss?fileID=7433441132597879392&amp;guid=8ed81a29cfec17c408a60cfc5c6019e6&amp;type=3#VerticalTab"/>
+    <ui:Instance template="VerticalTabViewTemplate" name="VerticalTabViewTemplate"/>
+</ui:UXML>

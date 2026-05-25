@@ -1,0 +1,96 @@
+:root {
+}
+
+.VerticalTabView {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: stretch;
+    align-items: stretch;
+    height: 100%;
+}
+
+.VerticalTabView .description {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    white-space: normal;
+}
+
+.VerticalTabView .unity-tab__header {
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    color: rgb(112, 201, 236);
+    font-size: 26px;
+    width: 320px;
+    height: 90px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    -unity-text-align: middle-left;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left-width: 0;
+    border-left-color: rgb(112, 201, 236);
+    transition-duration: 0.2s;
+}
+
+.VerticalTabView .unity-tab__header:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    scale: 1.02 1.02;
+    color: rgb(160, 230, 255);
+}
+
+.VerticalTabView .unity-tab__header:checked {
+    background-color: rgba(112, 201, 236, 0.2);
+    color: rgb(255, 255, 255);
+    border-left-width: 10px;
+    scale: 1.05 1.05;
+}
+
+.VerticalTabView .unity-tab__header:active {
+    background-color: rgba(112, 201, 236, 0.4);
+    scale: 0.98 0.98;
+}
+
+.VerticalTabView .unity-tab-view__header-container {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right-width: 1px;
+    border-right-color: rgba(255, 255, 255, 0.1);
+    width: 330px;
+}
+
+.VerticalTabView .unity-tab-view__content-viewport {
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.VerticalTabView .unity-tab__content-container {
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-grow: 1;
+}
+
+.VerticalTabView .unity-button {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-width: 0;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.2s;
+    padding: 10px 20px;
+}
+
+.VerticalTabView .unity-button:hover {
+    background-color: rgba(112, 201, 236, 0.3);
+    scale: 1.05 1.05;
+}
+
+.VerticalTabView .unity-button:active {
+    background-color: rgb(112, 201, 236);
+    scale: 0.95 0.95;
+}
+
+

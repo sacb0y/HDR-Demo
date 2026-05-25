@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="CloseBack" style="flex-grow: 1; position: absolute; align-self: flex-end; height: 242px; width: 89px;">
+        <ui:Button text="X" name="CloseButton" class="ManagerButtions"/>
+        <ui:Button text="&lt;" name="BackButton" class="Back ManagerButtions"/>
+    </ui:VisualElement>
+</ui:UXML>

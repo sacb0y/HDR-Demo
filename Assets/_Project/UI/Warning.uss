@@ -1,0 +1,50 @@
+:root {
+}
+
+.Header {
+    font-size: 323px;
+    -unity-font-style: normal;
+    color: rgb(250, 52, 42);
+    -unity-text-align: upper-center;
+    height: 348px;
+    padding-bottom: 4px;
+}
+
+.Text {
+    color: rgb(255, 255, 255);
+    font-size: 43px;
+    white-space: normal;
+    -unity-text-align: upper-center;
+    width: 1268px;
+    align-self: center;
+    padding-bottom: 47px;
+    border-bottom-width: 0;
+}
+
+.AcceptButton {
+    background-color: rgb(176, 0, 0);
+    height: 77px;
+    width: 456px;
+    align-items: auto;
+    align-self: center;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+}
+
+.AcceptButton:hover {
+    scale: 1.1 1.1 1.1;
+}
+
+.AcceptButton:active {
+    background-color: rgb(255, 170, 170);
+    scale: 1 1;
+}

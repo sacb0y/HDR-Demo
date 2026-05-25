@@ -1,0 +1,55 @@
+:root {
+}
+
+#DisplayInfo .unity-label {
+    font-size: 22px;
+    white-space: pre-wrap;
+}
+
+#unity-multi-column-view__header-container .unity-label {
+    font-size: 32px;
+    color: rgb(132, 132, 132);
+}
+
+#unity-multi-column-view__header-container {
+    background-color: rgba(255, 255, 255, 0.01);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.unity-multi-column-header__column {
+    background-color: rgba(46, 46, 46, 0);
+}
+
+.VerticalTabView .unity-tab__header {
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    color: rgb(112, 201, 236);
+    font-size: 30px;
+    flex-direction: column;
+    width: 176px;
+    height: 60px;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    -unity-text-align: upper-left;
+}
+
+.VerticalTabView .unity-tab-view__header-container {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right-width: 1px;
+    border-right-color: rgba(255, 255, 255, 0.1);
+    width: 190px;
+}
+
+.unity-tab {
+    margin-bottom: 0;
+    padding-bottom: 146px;
+}

@@ -1,0 +1,60 @@
+/*
+2026-05-22 AI-Tag
+This was created with the help of Assistant, a Unity Artificial Intelligence product.
+*/
+.faq-container {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+}
+
+.faq-title {
+    font-size: 40px;
+    -unity-font-style: bold;
+    color: rgb(112, 201, 236);
+    margin-bottom: 20px;
+    -unity-text-align: middle-center;
+}
+
+.faq-scroll-view {
+    flex-grow: 1;
+}
+
+.faq-entry {
+    margin-bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question-button {
+    background-color: transparent;
+    border-width: 0;
+    padding: 15px;
+    -unity-text-align: middle-left;
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(247, 105, 83);
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.faq-question-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq-answer-container {
+    padding: 0 15px 15px 15px;
+    display: none; /* Hidden by default */
+}
+
+.faq-answer-container.expanded {
+    display: flex;
+}
+
+.faq-answer-label {
+    font-size: 18px;
+    color: white;
+    white-space: normal;
+}

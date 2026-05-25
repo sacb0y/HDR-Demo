@@ -1,0 +1,28 @@
+<!--
+2026-05-22 AI-Tag
+This was created with the help of Assistant, a Unity Artificial Intelligence product.
+-->
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:custom="_Project.Scripts.UI.Elements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd">
+    <ui:Template name="GlobalButtons" src="project://database/Assets/_Project/UI/GlobalButtons.uxml" />
+    <ui:Style src="Settings.uss" />
+    <ui:VisualElement name="settingsRoot" class="settings-container">
+        <ui:Label text="Settings" class="settings-title" />
+        
+        <ui:VisualElement class="settings-row">
+            <ui:Label text="Default Display" class="settings-label" />
+            <ui:DropdownField name="displayDropdown" class="settings-control" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="settings-row">
+            <ui:Label text="HDR Output" class="settings-label" />
+            <custom:UnifiedHDRToggle name="hdrToggle" class="settings-control" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="settings-button-row">
+            <ui:Button name="applyButton" text="Apply" class="settings-button apply-button" />
+            <ui:Button name="saveButton" text="Save" class="settings-button save-button" />
+        </ui:VisualElement>
+
+        <ui:Instance template="GlobalButtons" style="position: absolute; bottom: 132px; right: 0; top: auto;"/>
+    </ui:VisualElement>
+</ui:UXML>

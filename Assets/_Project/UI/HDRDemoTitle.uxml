@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/UI/HDRDemo.uss?fileID=7433441132597879392&amp;guid=993c5530b27f8374cacfeb35eb3d2236&amp;type=3#HDRDemo"/>
+    <ui:VisualElement name="TitleContainer" style="flex-grow: 1; width: 865px; position: relative; align-self: center; justify-content: center; color: rgba(27, 27, 27, 0);">
+        <ui:Label text="HDR DEMO" name="Title" style="font-size: 95px; -unity-text-align: upper-center; -unity-text-outline-width: 0; color: rgb(42, 175, 250); -unity-font-style: bold; border-bottom-width: 0; height: 118px;"/>
+        <ui:Label text="v0.1.0" name="Version" style="font-size: 33px; align-self: center; color: rgb(180, 180, 180); -unity-font-style: bold;">
+            <Bindings>
+                <ui:DataBinding property="text" binding-mode="ToTarget" data-source=""/>
+            </Bindings>
+        </ui:Label>
+        <ui:VisualElement name="MainMenu" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;">
+            <ui:Button text="OPEN TESTS" name="OpenTests" binding-path="MainMenu/OpenTests" class="TitleScreenButton TestButton"/>
+            <ui:Button text="HDR INFO" name="HDRInfo" binding-path="MainMenu/HDRInfo" class="TitleScreenButton LearnButton"/>
+            <ui:Button text="HDR GUIDE" name="HDRGallery" binding-path="MainMenu/HDRGuide" class="LearnButton TitleScreenButton"/>
+            <ui:Button text="DISPLAY INFO" name="DisplayInfo" binding-path="MainMenu/DisplayInfo" class="InfoButton TitleScreenButton"/>
+            <ui:Button text="FAQ" name="FAQ" binding-path="MainMenu/FAQ" class="TitleScreenButton TSLearnButton" style="color: rgb(112, 201, 236);"/>
+            <ui:Button text="SETTINGS" name="Settings" binding-path="MainMenu/Settings" class="TitleScreenButton OtherButton"/>
+            <ui:Button text="CREDITS" name="Credits" binding-path="MainMenu/Credits" class="TitleScreenButton OtherButton"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement template="GlobalButtons" style="position: absolute; right: 0; top: 0;">
+        <ui:VisualElement name="Buttons" style="flex-grow: 1; width: 64px; right: 0; position: absolute; top: 0;">
+            <ui:Button name="CloseButton" binding-path="Close" style="background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 0, 0); padding: 5px; aspect-ratio: 1; background-image: url(&quot;project://database/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/X.png?fileID=2800000&amp;guid=56a790d5c215146f0aac3e0d2ba48080&amp;type=3#X&quot;); background-size: 120% 120%;"/>
+            <ui:Button name="BackButton" binding-path="Back" style="background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(112, 201, 236); aspect-ratio: 1; background-image: url(&quot;project://database/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/ArrowFatLeft.png?fileID=2800000&amp;guid=ee4f53b3c2e9441a996783d458360631&amp;type=3#ArrowFatLeft&quot;); background-size: 120% 120%; display: none;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

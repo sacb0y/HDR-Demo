@@ -1,0 +1,29 @@
+/*
+2026-05-24 AI-Tag
+This was created with the help of Assistant, a Unity Artificial Intelligence product.
+*/
+:root {
+}
+
+.GradientLabel {
+    transform-origin: right;
+    position: absolute;
+    left: auto;
+    top: auto;
+    -unity-text-align: upper-right;
+    color: rgb(255, 255, 255);
+    width: 78px;
+    right: auto;
+    font-size: 14px;
+    translate: -30px -50%;
+    align-content: auto;
+    margin-right: 0;
+}
+
+.unity-toggle > .unity-toggle__label {
+    font-size: 23px;
+}
+
+#Credits {
+    font-size: 15px;
+}

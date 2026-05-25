@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Logo" style="flex-grow: 1;">
+        <ui:Image style="right: 0; top: 0; left: 0; bottom: 0; position: absolute; background-image: url(&quot;project://database/Assets/_Project/Images/Logos/HDRReccomended.png?fileID=2800000&amp;guid=f3d834bee48656b47b7f93f7790640e3&amp;type=3#HDRReccomended&quot;); margin-left: 150px; margin-right: 150px; margin-top: 20px; margin-bottom: 20px; aspect-ratio: 0.9933555; -unity-text-auto-size: none; -unity-background-scale-mode: scale-to-fit;"/>
+    </ui:VisualElement>
+</ui:UXML>

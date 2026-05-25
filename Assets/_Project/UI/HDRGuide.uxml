@@ -1,0 +1,19 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="GlobalButtons" src="project://database/Assets/_Project/UI/GlobalButtons.uxml?fileID=9197481963319205126&amp;guid=afd5d21a5d627ab4088425c1c15c9544&amp;type=3#GlobalButtons"/>
+    <Style src="project://database/Assets/_Project/UI/UITK%20Templates/VerticalTab.uss?fileID=7433441132597879392&amp;guid=8ed81a29cfec17c408a60cfc5c6019e6&amp;type=3#VerticalTab"/>
+    <ui:VisualElement name="VisualElement" style="margin-right: 68px;">
+        <ui:TabView view-data-key="TabbedMenu" reorderable="true" name="VerticalTabView" class="VerticalTabView unity-tab-view__content-viewport description" style="margin-right: 0;">
+            <ui:Tab label="HDR Guide" name="HDRColorTest">
+                <ui:VisualElement name="TestTabContent">
+                    <ui:VisualElement name="TestTabContent" style="flex-grow: 1; height: auto; justify-content: flex-start; align-content: auto;">
+                        <ui:ScrollView name="TabScrollView" style="width: 100%; height: auto;">
+                            <ui:Label text="Guidence and reccomendations on display purchases or game reccomendations will be here in the future" name="Description" class="description" style="white-space: normal;"/>
+                        </ui:ScrollView>
+                        <ui:Button text="Button" name="StartButton" style="font-size: 85px; color: rgb(255, 255, 255); margin-top: 15px; display: none;"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Tab>
+        </ui:TabView>
+    </ui:VisualElement>
+    <ui:Instance template="GlobalButtons" style="position: absolute; top: 0; right: 0;"/>
+</ui:UXML>

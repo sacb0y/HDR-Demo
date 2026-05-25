@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2edaa0f2cb1b7c14cb5aff873cbbe2fc, type: 3}
+  m_Name: HDR Gallery
+  m_EditorClassIdentifier: 
+  gallery:
+  - image: {fileID: 2800000, guid: 5a9b289dd389949408606638aa80b5cc, type: 3}
+    description: 'Cyberpunk 2077: Phantom Liberty by CD Project Red'
+  - image: {fileID: 2800000, guid: 28868c409df7f1f41837407486dfd634, type: 3}
+    description: 'Cyberpunk 2077: Phantom Liberty by CD Project Red'
+  - image: {fileID: 2800000, guid: 6a83bd54ec62c664ebff99631df26f3e, type: 3}
+    description: 'Cyberpunk 2077: Phantom Liberty by CD Project Red'
+  - image: {fileID: 2800000, guid: cd53614ec5bb8bb4a969e3d01e9e9421, type: 3}
+    description: 'Cyberpunk 2077: Phantom Liberty by CD Project Red'
+  - image: {fileID: 2800000, guid: 82d9e56fe52c88d44a6b6fa4ef3200bc, type: 3}
+    description: 'Cyberpunk 2077: Phantom Liberty by CD Project Red'
+  - image: {fileID: 2800000, guid: e88004b7735ea0f45a013ede57da210f, type: 3}
+    description: 'Cyberpunk 2077: Phantom Liberty by CD Project Red
+
+      (This
+      one was chosen cause it''s an example of a very dark scene, despite CP''s elevated
+      black levels'
+  - image: {fileID: 2800000, guid: ef58efa042e876f4eb20d3f0a85eeaa5, type: 3}
+    description: Control by Remedy Entertainment ||  HDR, raytracing  and DLSS mod
+      by filoppi on PCGamingWiki
+  - image: {fileID: 2800000, guid: dd28bf6fa8eeb404695a11ad77b7bc14, type: 3}
+    description: Control by Remedy Entertainment ||  HDR, raytracing  and DLSS mod
+      by filoppi on PCGamingWiki
+  - image: {fileID: 2800000, guid: 67edec1c65b6bc7449666bf1efe663e2, type: 3}
+    description: Call of Duty Modern Warfare 2 2022 by Infinity Ward
+  - image: {fileID: 2800000, guid: edc09e3be78d1854b8ab582892be2b30, type: 3}
+    description: Call of Duty Modern Warfare 2 2022 by Infinity Ward
+  - image: {fileID: 2800000, guid: 6cdc816886022a9439c5d8fa4cca9b0d, type: 3}
+    description: 'Call of Duty Modern Warfare 2 2022 by Infinity Ward
+
+
+      This
+      one provides an example of an over bright scene as exposure adjusts.'
+  - image: {fileID: 2800000, guid: da860eb9461a122478fc98f995713a3b, type: 3}
+    description: Final Fantasy VII Remake Intergrade by Square-Enix
+  - image: {fileID: 2800000, guid: 809f04dd04e3a954186f065e9fa2e331, type: 3}
+    description: 'Octopath Traveler by Square Enix using Modified Ini file to enable
+      HDR
+
+
+      A great example of how HDR benefits pixel and stylized games too.'
+  - image: {fileID: 2800000, guid: d7eaf7593b031ee44b89314ca0903cb6, type: 3}
+    description: Octopath Traveler by Square Enix using Modified Ini file to enable
+      HDR
+  - image: {fileID: 2800000, guid: 89cba2d63292d4e4a8cb1e581d469f5d, type: 3}
+    description: Octopath Traveler by Square Enix using Modified Ini file to enable
+      HDR
+  - image: {fileID: 2800000, guid: ff59d6bb98acbc44d8a32d74056ab8e8, type: 3}
+    description: Octopath Traveler by Square Enix using Modified Ini file to enable
+      HDR
+  - image: {fileID: 2800000, guid: 355a9edf9ece51b478202d9061b8b1b1, type: 3}
+    description: Resident Evil 4 Remake by Capcom
+  - image: {fileID: 2800000, guid: fce1dc5422f411c4d9116995bdca6ecf, type: 3}
+    description: Resident Evil 4 Remake by Capcom
+  - image: {fileID: 2800000, guid: 933126c0eb349b6458884138080b671e, type: 3}
+    description: 'Resident Evil 4 Remake by Capcom
+
+
+      The implementation in
+      RE4 is subtle, but this scene is mrighter than most of the game, oddly the
+      brightness doesn''t carry to the rest of the scene. Which may feel a bit odd
+      to look at. only the fire is bright not the light it produces.'
+  - image: {fileID: 2800000, guid: aaa54bf74700c6e498c8b7995d079d4c, type: 3}
+    description: Resident Evil 4 Remake by Capcom
+  - image: {fileID: 2800000, guid: 946087f76d9ccc847843b67adfb6ea91, type: 3}
+    description: Resident Evil 4 Remake by Capcom
+  - image: {fileID: 2800000, guid: 546d985030af09849b4278e6e4ad6f86, type: 3}
+    description: 'Star Wars: Jedi Survivor by Respawn Entertainment'
+  - image: {fileID: 2800000, guid: c0839ac447581e74b83ff4acdd0ef3ec, type: 3}
+    description: 'Star Wars: Jedi Survivor by Respawn Entertainment'
+  - image: {fileID: 2800000, guid: 34a4a5e9f028de044bcf092920f679fb, type: 3}
+    description: 'Star Wars: Jedi Survivor by Respawn Entertainment'
+  - image: {fileID: 2800000, guid: 748d954dec8d1904abbaadad24f17cd4, type: 3}
+    description: 'Star Wars: Jedi Survivor by Respawn Entertainment'
+  - image: {fileID: 2800000, guid: 78cef37345a937242892f86879070236, type: 3}
+    description: 'Star Wars: Jedi Survivor by Respawn Entertainment'
+  - image: {fileID: 2800000, guid: 2d86948dab6bc834485153dcb2bdff00, type: 3}
+    description: 'Star Wars: Jedi Survivor by Respawn Entertainment'
+  - image: {fileID: 2800000, guid: ecfcf150f4ff8b64384e63cd5ec9cbef, type: 3}
+    description: 'Star Wars: Jedi Survivor by Respawn Entertainment'
+  - image: {fileID: 2800000, guid: bade1553104d98145bbde62db0da19e1, type: 3}
+    description: 'Star Wars: Jedi Survivor by Respawn Entertainment'
+  - image: {fileID: 2800000, guid: 41b444b22fa43c74aa8d627e86ab3623, type: 3}
+    description: Spiderman by Insomniac
+  - image: {fileID: 2800000, guid: 44a2803ebf8b10740aec5486b995dc28, type: 3}
+    description: Spiderman by Insomniac
+  - image: {fileID: 2800000, guid: c658e8ee3165a93488fd16ac0af28151, type: 3}
+    description: Spiderman by Insomniac
+  - image: {fileID: 2800000, guid: ce927b93197810d4f9a78f8e950e4f05, type: 3}
+    description: Spiderman by Insomniac
+  - image: {fileID: 2800000, guid: d7f6b63bc9fe22c488f62ded5e65db93, type: 3}
+    description: Spiderman by Insomniac

@@ -1,0 +1,32 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="GlobalButtons" src="project://database/Assets/_Project/UI/GlobalButtons.uxml?fileID=9197481963319205126&amp;guid=afd5d21a5d627ab4088425c1c15c9544&amp;type=3#GlobalButtons"/>
+    <ui:Template name="TestTabContent" src="project://database/Assets/_Project/UI/UITK%20Templates/TestTabContent.uxml?fileID=9197481963319205126&amp;guid=e418ed3189df78046a96eae6d5a95a8d&amp;type=3#TestTabContent"/>
+    <Style src="project://database/Assets/_Project/UI/UITK%20Templates/VerticalTab.uss?fileID=7433441132597879392&amp;guid=8ed81a29cfec17c408a60cfc5c6019e6&amp;type=3#VerticalTab"/>
+    <ui:TabView view-data-key="TabbedMenu" reorderable="true" name="VerticalTabView" class="VerticalTabView unity-tab-view__content-viewport description" style="margin-right: 64px;">
+        <ui:Tab label="HDR Color Test" name="HDRColorTest">
+            <ui:Instance template="TestTabContent" name="TestTabContent">
+                <AttributeOverrides element-name="StartButton" binding-path="Tests/HDRColor" text="Start Color Test "/>
+                <AttributeOverrides element-name="Description" text="This test shows a grid of colors with increasing luminocity. More info is in the test.&#10;&#10;&lt;size=200%&gt;&lt;color=&quot;red&quot;&gt;WARNING!:&lt;/color&gt;&lt;/size&gt; This test has static bright objects and with prolonged display on OLED screens this may cause burn-in. ATM there&apos;s no safe guards in place, I&apos;ll add them in the future."/>
+            </ui:Instance>
+        </ui:Tab>
+        <ui:Tab label="Local Dimming Test" name="LocalDimmingTest">
+            <ui:Instance template="TestTabContent">
+                <AttributeOverrides element-name="StartButton" binding-path="Tests/LocalDimming" text="Start LD Test"/>
+                <AttributeOverrides element-name="Description" text="This will test the local dimming of your display, this is as test of contrast ratio. What you&apos;re looking for is &quot;Blooming&quot; and what that means is a halo around a bright object in a dark space and how that is handled with a moving object. You will see a cube appear and move along the outside of your screen, watch the area around the cube. There will be two versions one with SDR values and one with HDR values. Lastly you&apos;ll see many cubes as a test of multiple regions at once and blooming between points. Again with SDR values and HDR values. This test will loop.&#10;&#10;If your screen has no local dimming you&apos;ll see no blooming but either the brightness of the cube or black levels will suffer.&#10;&#10;Mini-led displays tend to have local dimming but are usually the best case scenario for blooming.&#10;&#10;On an OLED this shouldn&apos;t present any blooming since those displays don&apos;t need local dimming to have deep blacks and bright whites. Though they generally don&apos;t get as bright as mini-led for now. &#10;&#10;Do understand this is a test of extreme circumstances. You may see blooming in this test, but never when watching a movie or playing a game. IF you&apos;re viewing this on a TV, it&apos;s  PC or &quot;Game mode&quot; may also have a weaker local dimming algorithm than other modes designed for movies. This is due to reducing input lag. "/>
+            </ui:Instance>
+        </ui:Tab>
+        <ui:Tab label="ABL Test" name="ABLTest">
+            <ui:Instance template="TestTabContent">
+                <AttributeOverrides element-name="StartButton" binding-path="Tests/ABL" text="Start ABL Test"/>
+                <AttributeOverrides element-name="Description" text="In this test you will be able to control a cube and scale it to fit your screen.&#10;&#10;The purpose of this test is to see the ABL or Auto Brightness Limiter for your screen. This engages differently for all displays, but generally as the cube gets larger it gets dimmer. It may also get dimmer the longer it is on screen. &#10;&#10;This is so you can see how different kinds of content even if graded to be bright may not appear as bright as it should be.&#10;&#10;OLED screens can tend to suffer from this the most. it depends on brand, peak brightness and model."/>
+            </ui:Instance>
+        </ui:Tab>
+        <ui:Tab label="Colorbanding Test" name="ColorBandingTest">
+            <ui:Instance template="TestTabContent">
+                <AttributeOverrides element-name="StartButton" binding-path="Tests/ColorBanding" text="Start Banding Test"/>
+                <AttributeOverrides element-name="Description" text="Most of the time when HDR is refered to it&apos;s &quot;more colors&quot; but it can be hard to grasp what that means. This demo shows how HDR helps with issues like color banding. Making certain kinds of scenes smoother and cleaner looking."/>
+            </ui:Instance>
+        </ui:Tab>
+    </ui:TabView>
+    <ui:Instance template="GlobalButtons" style="position: absolute; right: 0;"/>
+</ui:UXML>

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Buttons" style="flex-grow: 1; width: 64px; right: 0; position: absolute; top: 0;">
+        <ui:Button name="CloseButton" binding-path="Close" style="background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 0, 0); padding: 5px; aspect-ratio: 1; background-image: url(&quot;project://database/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/X.png?fileID=2800000&amp;guid=56a790d5c215146f0aac3e0d2ba48080&amp;type=3#X&quot;); background-size: 120% 120%;" />
+        <ui:Button name="BackButton" binding-path="Back" style="background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(112, 201, 236); aspect-ratio: 1; background-image: url(&quot;project://database/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/ArrowFatLeft.png?fileID=2800000&amp;guid=ee4f53b3c2e9441a996783d458360631&amp;type=3#ArrowFatLeft&quot;); background-size: 120% 120%;" />
+    </ui:VisualElement>
+</ui:UXML>

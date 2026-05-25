@@ -1,0 +1,60 @@
+.marker {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    left: 50%;
+    top: 50%;
+}
+
+#Marker1 {
+    margin-left: -534px;
+}
+
+#Marker2 {
+    margin-left: 131px;
+    margin-top: -166px;
+}
+
+#Marker3 {
+    margin-left: -167px;
+    margin-top: 280px;
+}
+
+#Marker4 {
+    margin-left: -286px;
+    margin-top: 30px;
+}
+
+.top-toggle-container {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    translate: -50% 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-toggle-container > .unity-toggle {
+    margin: 0 20px;
+}
+
+.top-toggle-container .unity-label {
+    color: rgb(63, 63, 63);
+    font-size: 12px;
+}
+
+.top-toggle-container .unity-base-field__label {
+    min-width: 64px;
+}
+
+#MarkersContainer {
+}
+
+.tab-view-container {
+    max-height: 275px;
+    max-width: 1080px;
+}

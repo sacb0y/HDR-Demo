@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909908b70e3c24a47a32cc9e52b8e19e, type: 3}
+  m_Name: SampleFAQData
+  m_EditorClassIdentifier: Assembly-CSharp::FAQData
+  entries:
+  - question: I can turn on HDR but I see barely no difference?
+    answer: 'You display may be a "HDR" display in name only, many monitors have
+      been marketed as HDR but only have standard brightness (200nits - 300nits)
+      so while they can handle a HDR signal they do not display the colors properly.
+      It''s similar to a 1080p TV having the option of handling a 4K signal, it''s
+      still a 1080p image. '
+  - question: What if my display is not HDR?
+    answer: 'You can still run the tests and demos but the use for you may be very
+      limited '
+  - question: I thought HDR was a post process/Camera thing/Image type?
+    answer: 'Many things have had the name HDR over time, in this case we meant display
+      HDR, which is the ability for your TV/Monitor to display HDR colors. Kind of
+      like 4K Display means a display can show 4K pixels. '

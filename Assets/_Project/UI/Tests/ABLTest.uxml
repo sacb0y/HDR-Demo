@@ -1,0 +1,36 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:custom="_Project.Scripts.UI.Elements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="GlobalButtons" src="project://database/Assets/_Project/UI/GlobalButtons.uxml?fileID=9197481963319205126&amp;guid=afd5d21a5d627ab4088425c1c15c9544&amp;type=3#GlobalButtons"/>
+    <Style src="project://database/Assets/_Project/UI/UITK%20Templates/HorizontalTab.uss?fileID=7433441132597879392&amp;guid=bec78c1d34c1dc247adfa2176c91712b&amp;type=3#HorizontalTab"/>
+    <Style src="project://database/Assets/_Project/UI/Tests/TestUI.uss?fileID=7433441132597879392&amp;guid=b7ccc1d459e9bc7409e2c2cc066b63a0&amp;type=3#TestUI"/>
+    <Style src="project://database/Assets/_Project/UI/Tests/ABLTest.uss?fileID=7433441132597879392&amp;guid=9151f86f0258921498d54b8da6d5d387&amp;type=3#ABLTest"/>
+    <ui:Instance template="GlobalButtons" style="position: absolute; right: 0; top: 0;"/>
+    <ui:VisualElement name="TopControls" class="top-toggle-container">
+        <ui:Toggle label="Hide Info" name="HideUIToggle" value="false"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="TabContainer" class="tab-view-container" style="position: absolute; bottom: 103px; width: 1000px; align-self: center; max-height: 248px; background-color: rgb(36, 36, 36);">
+        <ui:TabView name="HorizontalTabView" view-data-key="ABLTabMenu" class="HorizontalTabView">
+            <ui:Tab label="About" name="AboutTab">
+                <ui:ScrollView>
+                    <ui:Label text="ABL (Average Brightness Level) test. Scale the grid to see when the display begins to dim (power limit) based on coverage." class="description"/>
+                </ui:ScrollView>
+            </ui:Tab>
+            <ui:Tab label="Opinion" name="OpinionTab">
+                <ui:ScrollView>
+                    <ui:Label text="A nits measurement is one thing but how much ABL affects your image is also relevant. You will likely see some displays perform extremely well here, and some struggle... &#10;&#10;Try the coverage scale, if it's high enough you might see the image getting dimmer as the grid gets larger. " class="description"/>
+                </ui:ScrollView>
+            </ui:Tab>
+            <ui:Tab label="Settings" name="SettingsTab">
+                <ui:ScrollView>
+                    <ui:VisualElement style="padding: 20px; flex-direction: row; align-items: center;">
+                        <custom:UnifiedHDRToggle label="HDR Enabled" name="hdrToggle" style="font-size: 30px; color: white;"/>
+                        <ui:Button text="Apply" name="applyButton" style="margin-left: 50px; font-size: 24px; width: 200px; height: 60px; display: none;"/>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:Tab>
+        </ui:TabView>
+    </ui:VisualElement>
+    <ui:VisualElement name="MainContainer" style="justify-content: flex-end; align-items: center; height: 116px; position: absolute; bottom: 0; align-self: center; width: 1000px; visibility: visible;">
+        <ui:Label name="CoverageLabel" text="Coverage: 0%" style="font-size: 21px; -unity-font-style: bold; margin-bottom: 4px;"/>
+        <ui:Slider label="Coverage Scale" value="0.1" low-value="0.01" high-value="1.0" name="BrightnessSlider" style="flex-direction: row; color: rgb(255, 255, 255); width: 80%; font-size: 30px;"/>
+    </ui:VisualElement>
+</ui:UXML>

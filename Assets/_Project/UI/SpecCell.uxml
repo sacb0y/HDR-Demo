@@ -1,0 +1,7 @@
+<!--
+2026-05-22 AI-Tag
+This was created with the help of Assistant, a Unity Artificial Intelligence product.
+-->
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Label binding-path="Spec" style="flex-grow: 1; -unity-text-align: middle-left; padding-left: 5px; color: rgb(41, 131, 183);" />
+</ui:UXML>

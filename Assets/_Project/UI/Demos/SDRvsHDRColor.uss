@@ -1,0 +1,74 @@
+/*
+2026-05-24 AI-Tag
+This was created with the help of Assistant, a Unity Artificial Intelligence product.
+*/
+:root {
+}
+
+.GradientLabel {
+    transform-origin: right;
+    position: absolute;
+    left: auto;
+    top: auto;
+    -unity-text-align: upper-right;
+    color: rgb(255, 255, 255);
+    width: 78px;
+    right: auto;
+    font-size: 14px;
+    translate: -30px -50%;
+    align-content: auto;
+    margin-right: 0;
+}
+
+.unity-toggle > .unity-toggle__label {
+    font-size: 23px;
+}
+
+#Credits {
+    font-size: 15px;
+}
+
+.mode-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-width: 1px;
+    border-color: rgb(43, 130, 170);
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+.mode-button:hover {
+    background-color: rgba(43, 130, 170, 0.5);
+}
+
+.mode-button--active {
+    background-color: rgb(43, 130, 170);
+    border-color: white;
+}
+
+.image-toggle {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-width: 1px;
+    border-color: rgb(43, 130, 170);
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    padding: 0;
+}
+
+.image-toggle:hover {
+    background-color: rgba(43, 130, 170, 0.5);
+}
+
+.image-toggle--active {
+    background-color: rgb(43, 130, 170);
+    border-color: white;
+}

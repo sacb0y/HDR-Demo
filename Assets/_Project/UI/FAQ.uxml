@@ -1,0 +1,13 @@
+<!--
+2026-05-22 AI-Tag
+This was created with the help of Assistant, a Unity Artificial Intelligence product.
+-->
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd">
+    <ui:Template name="GlobalButtons" src="project://database/Assets/_Project/UI/GlobalButtons.uxml" />
+    <ui:Style src="FAQ.uss" />
+    <ui:VisualElement name="faqRoot" class="faq-container">
+        <ui:Label text="Frequently Asked Questions" class="faq-title" />
+        <ui:ScrollView name="faqScrollView" class="faq-scroll-view" />
+        <ui:Instance template="GlobalButtons" style="position: absolute; bottom: 132px; right: 0; top: auto;"/>
+    </ui:VisualElement>
+</ui:UXML>

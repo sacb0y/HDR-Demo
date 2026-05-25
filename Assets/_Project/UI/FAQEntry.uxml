@@ -1,0 +1,12 @@
+<!--
+2026-05-22 AI-Tag
+This was created with the help of Assistant, a Unity Artificial Intelligence product.
+-->
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="faq-entry">
+        <ui:Button name="questionButton" class="faq-question-button" />
+        <ui:VisualElement name="answerContainer" class="faq-answer-container">
+            <ui:Label name="answerLabel" class="faq-answer-label" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

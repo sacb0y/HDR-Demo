@@ -1,0 +1,45 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:custom="_Project.Scripts.UI.Elements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="GlobalButtons" src="project://database/Assets/_Project/UI/GlobalButtons.uxml?fileID=9197481963319205126&amp;guid=afd5d21a5d627ab4088425c1c15c9544&amp;type=3#GlobalButtons"/>
+    <Style src="project://database/Assets/_Project/UI/UITK%20Templates/HorizontalTab.uss?fileID=7433441132597879392&amp;guid=bec78c1d34c1dc247adfa2176c91712b&amp;type=3#HorizontalTab"/>
+    <Style src="project://database/Assets/_Project/UI/Tests/TestUI.uss?fileID=7433441132597879392&amp;guid=b7ccc1d459e9bc7409e2c2cc066b63a0&amp;type=3#TestUI"/>
+    <ui:VisualElement name="Root" style="align-items: center; align-self: center; position: absolute; bottom: 0; left: 0; right: 0; top: 0;">
+        <ui:VisualElement name="TopControls" class="top-toggle-container">
+            <custom:UnifiedHDRToggle label="Display HDR" name="DisplayHDRToggle"/>
+            <ui:Toggle label=" HDR Gradients " name="HDRContentToggle" value="true"/>
+            <ui:Toggle label="Markers" name="MarkersToggle"/>
+            <ui:Toggle label="Info Tab" name="TabsToggle" value="true"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="MarkersContainer" picking-mode="Ignore" style="bottom: 0; position: absolute; top: 0;">
+            <ui:VisualElement name="Marker1" class="marker" style="position: absolute;"/>
+            <ui:VisualElement name="Marker2" class="marker" style="position: absolute;"/>
+            <ui:VisualElement name="Marker3" class="marker"/>
+            <ui:VisualElement name="Marker4" class="marker"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="TabViewContainer" picking-mode="Ignore" class="tab-view-container" style="bottom: 0; position: absolute;">
+            <ui:TabView name="MainTabView" picking-mode="Position" class="HorizontalTabView">
+                <ui:Tab label="Gradient Demo" name="GradientTab" picking-mode="Position">
+                    <ui:ScrollView>
+                        <ui:Label text="Here we have multiple color gradients similar to the color test, but this time the point is not brightness, but smooth gradients. HDR is not just about bright colors, it&apos;s also about color range which can solve a lot of problems resulting in devs avoiding certain circumstances.&#10;&#10;Without color range you get color banding, where instead of seeing a smooth gradient you&apos;ll see lines in the colors cause it&apos;s not possible for the display or the image itself does not have the color information.&#10;&#10;The interesting thing about HDR is that it&apos;s not an end all soluton, you see texture&apos;s also may need to be HDR in order to be smooth. You may have HDR support in a game, but then zoom in on a texture and see color banding. This is not a flaw of HDR but often a result of compression. HDR colors use more memory, so often textures are SDR. Exceptions being when a texture is emissive, or things like a skybox. &#10;&#10;The above gradients are made with high resolution textures and are as uncompressed as possible to give them the best chance to avoid banding, this is to show the true limit of the color space. Normally both SDR and HDR textures would have some degree of texture compression which would signifigantly increase banding. So while you will see some banding in the SDR gradients, it would normally be much worse. Consider these gradients the absolute best case scenario, and not what you commonly find in games.&#10;&#10;Color banding is often most visible in darker scenes, we&apos;ll demonstrate this in the screenshot demo button above.&#10;&#10;Lets go into a few notes: &#10;&#10;   •&lt;indent=5%&gt;The degree of color banding on your display can depend on the quality of your display. Some displays reduce color banding one way or another. In HDR enabled mode tho you may see more color banding than usual cause the display ideally shouldn&apos;t need to work as hard to reduce banding with HDR color. Lastly if you still see a lot of color banding with the HDR gradients this may reflect your display quality aswell or be some other issue.&lt;/indent&gt;&#10;&#10;   •&lt;indent=5%&gt;Auto-HDR does not solve color banding issues, infact it may make them worse.&lt;/indent&gt;&#10;&#10;   •&lt;indent=5%&gt;I discovered Unity has a feature to mitigate this problem quite thoroughly, in the camera settings there&apos;s a &quot;dithering&quot; toggle. While this doesn&apos;t add color depth and thus won&apos;t give you detail, you will no longer see harsh lines between transitions. This is easily a good enough solution for most people. Note tho, Unity NEEDS the HDR color information internally in order to do it&apos;s dithering. This mean the feature does not help with texture banding, it needs to be processing an already HDR image. Hence in the above case only the HDR mode would look smoother. This setting also benefits HDR a bit too it seems. The feature is off here though to provide a more universal example. But I may add a toggle in the future.&lt;/indent&gt;&#10;&#10;   •&lt;indent=5%&gt;The larger your display the worse colorbanding can be, the farther a transition of colors needs to travel the more colors needed to make that transition smooth. I don&apos;t know the exact sizes this is most obvious but for me displays around 50 inches suffer easily&lt;/indent&gt;&#10;&#10;   •&lt;indent=5%&gt;The brighter your display may also affect how much color banding you see.&lt;/indent&gt;&#10;" class="description"/>
+                    </ui:ScrollView>
+                </ui:Tab>
+                <ui:Tab label="Screenshot Demo" name="ScreenshotTab">
+                    <ui:ScrollView>
+                        <ui:Label text="This is a screenshot from FFVIIR a solid HDR game. &#10;&#10;This image may appear unusually dark for the game, but it is not modified. The game uses Exposure volumes so if you angle the camera so it&apos;s just enough outside, while inside a building the exposure will adjust to outside making the inside too dark. Don&apos;t worry about it too much...&#10;&#10;The point is this is a good demonstration of colorbanding, as one of the scenarios where color banding is most visible is darker scenes. &#10;&#10;Toggle the markers to see the highlighted areas where color banding is most prominant, and toggle HDR to swap the images between HDR and SDR versions. &#10;&#10;The SDR version you will see larger color sections where there should be smooth shading, this is due to the limited color space of HDR. You can also see this by using the &quot;Display HDR&quot; toggle to turn off the games HDR. This will make the HDR version of the image SDR to further prove this color banding.&#10;&#10;the only solution for color banding like this in SDR is things like filmgrain and dithering.&#10;&#10;Like in the other demo how much you see this can depend on display quality and screen size. Your display calibration may also be too dark to see aything at all. But I assure you a solid degree of visibility is here. " class="description"/>
+                    </ui:ScrollView>
+                </ui:Tab>
+                <ui:Tab label="Opinion" name="OpinionTab">
+                    <ui:ScrollView>
+                        <ui:Label text="In my opinion this is a core reason why HDR is mandatory, displays are getting larger and cheaper. And IMO having one big display is much more manageable than many, much like how a single GPU replaced multiple GPU&apos;s for gaming. As screens get larger and brighter color banding can be more obvious. &#10;&#10;This also benefits dark games, Batman, Alan Wake, and more. If you&apos;re someone who hates film grain you may also see color banding more as film grain often mitigates color bandaning. &#10;&#10;The use of HDR will allow games to be both darker and brighter." class="description"/>
+                    </ui:ScrollView>
+                </ui:Tab>
+                <ui:Tab label="Settings" name="SettingsTab">
+                    <ui:ScrollView>
+                        <ui:Label text="Adjust settings for this demo." class="description"/>
+                        <ui:Toggle label="Camera Dithering" name="DitheringToggle"/>
+                    </ui:ScrollView>
+                </ui:Tab>
+            </ui:TabView>
+        </ui:VisualElement>
+        <ui:Instance template="GlobalButtons" style="position: absolute; right: 0; top: 0;"/>
+    </ui:VisualElement>
+</ui:UXML>

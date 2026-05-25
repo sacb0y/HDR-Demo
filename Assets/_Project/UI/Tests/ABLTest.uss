@@ -1,0 +1,20 @@
+:root {
+}
+
+#MainContainer > #CoverageLabel {
+    color: rgba(14, 14, 14, 0.5);
+}
+
+#MainContainer > #BrightnessSlider > .unity-slider__label {
+    color: rgba(24, 24, 24, 0.5);
+}
+
+.top-toggle-container > .unity-toggle {
+    margin: 0 20px;
+    color: rgba(24, 24, 24, 0.5);
+}
+
+.top-toggle-container .unity-label {
+    color: rgba(24, 24, 24, 0.5);
+    font-size: 32px;
+}

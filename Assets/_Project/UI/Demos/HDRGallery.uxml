@@ -1,0 +1,46 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:custom="_Project.Scripts.UI.Elements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="GlobalButtons" src="project://database/Assets/_Project/UI/GlobalButtons.uxml?fileID=9197481963319205126&amp;guid=afd5d21a5d627ab4088425c1c15c9544&amp;type=3#GlobalButtons"/>
+    <ui:Style src="project://database/Assets/_Project/UI/Demos/HDRGallery.uss?fileID=7433441132597879392&amp;guid=1ea49006dbe91f8418217c9c2dd4e079&amp;type=3#HDRGallery"/>
+    <ui:VisualElement name="Gallery" style="bottom: 0; right: 0; top: 0; left: 0; flex-grow: 1;">
+        <ui:VisualElement name="Gradient" style="flex-grow: 1; width: 128px; align-content: auto; align-items: flex-end; justify-content: center;">
+            <ui:VisualElement name="GradientSegments" style="flex-grow: 1; background-color: rgb(168, 168, 168); width: 15px; position: relative; height: 983px; right: 0; align-self: auto; margin-right: 39px; overflow: visible; flex-direction: column-reverse; margin-top: 47px; margin-bottom: 51px;">
+                <ui:Label text="Nits" class="GradientLabel" style="position: absolute; width: 46px; translate: -50px 50%;"/>
+                <ui:VisualElement name="GradientNotch" style="flex-grow: 1; background-color: rgb(1, 0, 255); align-content: flex-end; justify-content: flex-start; align-items: flex-end;">
+                    <ui:Label text="3.16" name="Value" class="GradientLabel"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="GradientNotch" style="flex-grow: 1; background-color: rgb(0, 255, 255); align-content: flex-end; justify-content: flex-start; align-items: flex-end;">
+                    <ui:Label text="10 " name="Value" class="GradientLabel"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="GradientNotch" style="flex-grow: 1; background-color: rgb(0, 255, 0); align-content: flex-end; justify-content: flex-start; align-items: flex-end;">
+                    <ui:Label text="31.6" name="Value" class="GradientLabel"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="GradientNotch" style="flex-grow: 1; background-color: rgb(255, 255, 0); align-content: flex-end; justify-content: flex-start; align-items: flex-end;">
+                    <ui:Label text="100" name="Value" class="GradientLabel"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="GradientNotch" style="flex-grow: 1; background-color: rgb(255, 128, 0); align-content: flex-end; justify-content: flex-start; align-items: flex-end;">
+                    <ui:Label text="316" name="Value" class="GradientLabel"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="GradientNotch" style="flex-grow: 1; background-color: rgb(255, 0, 0); align-content: flex-end; justify-content: flex-start; align-items: flex-end;">
+                    <ui:Label text="1000" name="Value" class="GradientLabel"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="GradientNotch" style="flex-grow: 1; background-color: rgb(255, 0, 255); align-content: flex-end; justify-content: flex-start; align-items: flex-end;">
+                    <ui:Label text="3160" name="Value" class="GradientLabel"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="GradientNotch" style="flex-grow: 1; background-color: rgb(255, 255, 255); align-content: flex-end; justify-content: flex-start; align-items: flex-end;">
+                    <ui:Label text="10000" name="Value" class="GradientLabel"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; position: absolute; right: 0; bottom: 0; top: auto; left: 0; height: 101px; margin-left: 160px; margin-right: 160px; flex-direction: row; justify-content: center;">
+            <custom:UnifiedHDRToggle label="Display HDR" name="HDRToggle" style="color: rgb(43, 130, 170); flex-direction: row-reverse; align-self: center; font-size: 36px;"/>
+            <ui:Toggle label="Heatmap" name="HeatmapToggle" style="color: rgb(43, 130, 170); flex-direction: row-reverse; align-self: center; font-size: 36px;"/>
+            <ui:VisualElement name="Selector" style="transform-origin: bottom; flex-direction: row; justify-content: center; align-self: center; margin-left: 20px; margin-right: 20px;">
+                <ui:Button text="&lt;" name="Previous" style="aspect-ratio: 1; font-size: 35px; color: rgb(43, 130, 170);"/>
+                <ui:Label text="25" name="ImageNumber" style="aspect-ratio: 1; -unity-text-align: middle-center; color: rgb(255, 255, 255); font-size: 25px;"/>
+                <ui:Button text="&gt;" name="Next" style="aspect-ratio: 1; font-size: 35px; color: rgb(43, 130, 170);"/>
+            </ui:VisualElement>
+            <ui:Label text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" name="Credits" style="position: relative; color: rgb(255, 255, 255); white-space: normal; width: 366px;"/>
+        </ui:VisualElement>
+        <ui:Instance template="GlobalButtons" style="top: 0; right: 0; position: absolute;"/>
+    </ui:VisualElement>
+</ui:UXML>

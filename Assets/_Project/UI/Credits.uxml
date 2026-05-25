@@ -1,0 +1,12 @@
+<!--
+2026-05-23 AI-Tag
+This was created with the help of Assistant, a Unity Artificial Intelligence product.
+-->
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="project://database/Assets/_Project/UI/Credits.uss" />
+    <ui:VisualElement name="root" class="credits-root">
+        <ui:Label name="creditsTitle" class="credits-title" text="CREDITS" />
+        <ui:VisualElement name="creditsContainer" class="credits-container" />
+        <ui:Button name="BackButton" class="back-button" text="Back" />
+    </ui:VisualElement>
+</ui:UXML>

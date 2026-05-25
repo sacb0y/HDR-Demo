@@ -1,0 +1,28 @@
+:root {
+}
+
+.nit-label {
+    width: 65px;
+    -unity-text-align: middle-center;
+    color: white;
+    font-size: 20px;
+    -unity-font-style: bold;
+}
+
+.vertical-value {
+    color: white;
+    font-size: 24px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-right;
+    margin-top: 60px;
+}
+
+.hdr-line-label {
+    position: absolute;
+    top: -40px;
+    white-space: nowrap;
+    color: white;
+    -unity-font-style: bold;
+    font-size: 30px;
+    -unity-text-align: middle-center;
+}

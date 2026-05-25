@@ -1,0 +1,49 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:custom="_Project.Scripts.UI.Elements" xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="GlobalButtons" src="project://database/Assets/_Project/UI/GlobalButtons.uxml"/>
+    <Style src="project://database/Assets/_Project/UI/UITK%20Templates/HorizontalTab.uss"/>
+    <Style src="project://database/Assets/_Project/UI/Tests/TestUI.uss"/>
+
+    <ui:VisualElement name="Root" style="flex-grow: 1;">
+        <ui:VisualElement name="TopControls" class="top-toggle-container">
+            <custom:UnifiedHDRToggle label="HDR" name="HDRToggle"/>
+            <ui:Toggle label="Hide Tabs" name="HideUIToggle"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="TabContainer" class="tab-view-container" style="position: absolute; bottom: 0; width: 1000px; align-self: center; height: 350px;">
+            <ui:TabView name="MainTabView" class="HorizontalTabView">
+                <ui:Tab label="Travel Point" name="TravelPointTab">
+                    <ui:ScrollView>
+                        <ui:Label text="A bright cube travels around the edges of the screen to test for blooming and local dimming zone responsiveness." class="description"/>
+                        <ui:VisualElement style="padding: 20px;">
+                            <ui:Slider label="Speed" value="5" low-value="1" high-value="20" name="TravelSpeedSlider" style="color: white; font-size: 24px;"/>
+                            <ui:Slider label="Cube Size" value="0.5" low-value="0.1" high-value="2" name="CubeSizeSlider" style="color: white; font-size: 24px; margin-top: 10px;"/>
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:Tab>
+                <ui:Tab label="Stars" name="StarsTab">
+                    <ui:ScrollView>
+                        <ui:Label text="A dense field of small bright objects (stars) to test how local dimming handles high-contrast, high-frequency detail." class="description"/>
+                        <ui:VisualElement style="padding: 20px; flex-direction: row; align-items: center;">
+                            <ui:Toggle label="Colored Stars" name="ColoredStarsToggle" style="color: white; font-size: 24px;"/>
+                            <ui:SliderInt label="Star Count" value="300" low-value="50" high-value="1000" name="StarCountSlider" style="color: white; font-size: 24px; flex-grow: 1; margin-left: 20px;"/>
+                            <ui:Button text="Reshuffle" name="ReshuffleButton" style="width: 200px; height: 60px; margin-left: 50px; font-size: 24px;"/>
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:Tab>
+<ui:Tab label="Opinion" name="OpinionTab">
+                    <ui:ScrollView>
+                        <ui:Label text="Local dimming should ideally provide deep blacks without sacrificing the brightness of small highlights. Look for 'halos' or 'blooming' around the moving point or stars." class="description"/>
+                    </ui:ScrollView>
+                </ui:Tab>
+                <ui:Tab label="Settings" name="SettingsTab">
+                    <ui:ScrollView>
+                        <ui:Label text="Adjust settings for this test." class="description"/>
+                        <ui:Button text="Reset Test" name="ResetButton" style="width: 200px; height: 60px; font-size: 24px;"/>
+                    </ui:ScrollView>
+                </ui:Tab>
+            </ui:TabView>
+        </ui:VisualElement>
+
+        <ui:Instance template="GlobalButtons" style="position: absolute; right: 0; top: 0;"/>
+    </ui:VisualElement>
+</ui:UXML>

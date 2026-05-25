@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="HorizontalTabViewTemplate" src="project://database/Assets/_Project/UI/UITK%20Templates/HorizontalTabViewTemplate.uxml?fileID=9197481963319205126&amp;guid=900ebad3310029a40b76cd70e716b483&amp;type=3#HorizontalTabViewTemplate"/>
+    <Style src="project://database/Assets/_Project/UI/UITK%20Templates/HorizontalTab.uss?fileID=7433441132597879392&amp;guid=bec78c1d34c1dc247adfa2176c91712b&amp;type=3#HorizontalTab"/>
+    <ui:Instance template="HorizontalTabViewTemplate" name="HorizontalTabViewTemplate"/>
+</ui:UXML>

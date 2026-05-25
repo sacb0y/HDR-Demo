@@ -1,0 +1,82 @@
+/*
+2026-05-23 AI-Tag
+This was created with the help of Assistant, a Unity Artificial Intelligence product.
+*/
+.credits-root {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 100px 50px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.credits-title {
+    font-size: 80px;
+    color: rgb(42, 175, 250);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 60px;
+}
+
+.credits-container {
+    width: 90%;
+    max-width: 1200px;
+    flex-grow: 1;
+}
+
+.section-container {
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 48px;
+    color: white;
+    -unity-font-style: bold;
+    margin-bottom: 20px;
+    -unity-text-align: middle-center;
+}
+
+.credit-entry {
+    font-size: 32px;
+    color: rgb(200, 200, 200);
+    margin-bottom: 10px;
+    -unity-text-align: middle-center;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 15px 40px;
+    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-color: rgba(255, 255, 255, 0.3);
+    border-right-color: rgba(255, 255, 255, 0.3);
+    border-top-color: rgba(255, 255, 255, 0.3);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left-color: white;
+    border-right-color: white;
+    border-top-color: white;
+    border-bottom-color: white;
+    scale: 1.05;
+}
+
+.back-button:active {
+    background-color: rgba(42, 175, 250, 0.5);
+    scale: 0.95;
+}

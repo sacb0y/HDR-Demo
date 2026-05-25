@@ -1,0 +1,73 @@
+:root {
+}
+
+.TitleScreenButton {
+    font-size: 31px;
+    -unity-slice-left: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right-width: 50px;
+    border-left-width: 50px;
+    color: rgb(83, 253, 103);
+    -unity-font-style: bold;
+    width: 560px;
+    align-self: center;
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-color: rgba(188, 188, 188, 0.5);
+    -unity-text-auto-size: none;
+    -unity-text-generator: standard;
+    margin-bottom: 14px;
+}
+
+.TitleScreenButton.TestButton {
+    -unity-background-image-tint-color: rgb(83, 253, 103);
+}
+
+.TitleScreenButton.LearnButton {
+    color: rgb(112, 201, 236);
+}
+
+.TitleScreenButton.InfoButton {
+    color: rgb(247, 105, 83);
+}
+
+.TitleScreenButton.OtherButton {
+    color: rgb(255, 255, 255);
+}
+
+.TitleScreenButton:hover {
+    scale: 1.1 1.1 1.1;
+    background-color: rgb(154, 154, 154);
+}
+
+.ManagerButtions {
+    aspect-ratio: 1;
+    width: 75px;
+    height: 75px;
+    font-size: 75px;
+    color: rgb(255, 0, 0);
+    align-self: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    background-color: rgba(188, 188, 188, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-font-style: bold;
+    opacity: 0.5;
+}
+
+.ManagerButtions.Back {
+    color: rgb(112, 201, 236);
+}
+
+.ManagerButtions:hover {
+    scale: 1.1 1.1 1.1;
+    opacity: 1;
+}
