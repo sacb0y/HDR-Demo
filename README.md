@@ -9,6 +9,7 @@ For developers this project being on github provides a few resources currently
 - Display Info script includes examples of how to read a users display capabilities
 - HDR Gallery of reference HDR games
 - SDR vs HDR comparisons to understand the benefits of HDR implementation (still early)
+- UI navigation flow is handled with a node set up made with Graph Toolkit, so if you've ever wondered how that could work there you go.
   
 Planned for the future:
 - Gameplay demo's showing how HDR can influence design
